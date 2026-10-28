@@ -28,13 +28,49 @@ See FlowCraft in action:
 
 <img width="455" height="322" alt="Screenshot 2026-10-28 005312" src="https://github.com/user-attachments/assets/4e137a19-181a-49dd-ada7-29602ccbbdba" />
 
-## 📦 Installation
+📦 Installation Guide
 
-1. Download the latest public release from the [Releases](../../releases) page.
-2. Follow the installation instructions included with that release.
-3. Open EffectCraft and launch FlowCraft using the supported script installation workflow.
+Follow these steps to install FlowCraft in EffectCraft.
+
+Step 1 — Download FlowCraft
+
+Download FlowCraft.jsx from the Assets section of this release.
+
+Save it somewhere easy to find, such as your Downloads folder.
+
+Step 2 — Open EffectCraft
+
+Launch EffectCraft.
+
+Open the project where you want to use FlowCraft.
+
+Step 3 — Install the ScriptUI Panel
+
+Navigate to the Scripts section in EffectCraft.
+
+Select Install ScriptUI Panel.
+
+Locate the downloaded FlowCraft.jsx file.
+
+Select the file and confirm the installation if prompted.
+
+Step 4 — Launch FlowCraft
+
+Find FlowCraft in the available ScriptUI panels or scripts.
+
+Open it and start adjusting your Bézier easing curves.
+
+⚠️ Troubleshooting
+
+If FlowCraft doesn't appear, check that the installation completed successfully.
+
+Restart EffectCraft if required.
+
+Make sure you're using an EffectCraft version that supports the script features FlowCraft needs.
 
 > Installation instructions may change as FlowCraft and EffectCraft evolve. Follow the instructions provided with the version you download.
+
+---
 
 ## 🚧 Project Status
 
