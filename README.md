@@ -26,7 +26,7 @@ Create smoother motion. Shape your curves. Make every animation feel right.
 
 See FlowCraft in action:
 
-<!-- Add a screenshot or demo GIF here when available. -->
+<img width="455" height="322" alt="Screenshot 2026-10-28 005312" src="https://github.com/user-attachments/assets/4e137a19-181a-49dd-ada7-29602ccbbdba" />
 
 ## 📦 Installation
 
@@ -52,7 +52,8 @@ You can reach out to me on Discord or share feedback in the EffectCraft communit
 
 ## 👨‍💻 Creator
 
-Created by **just Ansh** for editors who want better animation tools.
+Created by **𝖏𝖚𝖘𝖙 𝕬𝖓𝖘𝖍
+** for editors who want better animation tools.
 
 ---
 
@@ -60,6 +61,6 @@ Created by **just Ansh** for editors who want better animation tools.
 
 **FlowCraft — Now For All.** 💙
 
-*Made for editors. Built for smoother motion.*
+*Made by editor. Made for editors.*
 
 </div>
