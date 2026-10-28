@@ -1,36 +1,65 @@
-<img width="2172" height="724" alt="FlowCraft Easing Curve Logo" src="https://github.com/user-attachments/assets/b1a1f2fc-1b97-45fe-83a3-f7dcc1b48a68" />
-# FlowCraft 🎨
+<div align="center">
 
-**A Bézier easing tool for EffectCraft.**
+<img src="assets/flowcraft-logo.png" alt="FlowCraft — Bézier Easing Tool" width="800">
 
-FlowCraft helps editors create and fine-tune easing curves for smoother, more natural animations.
+### A Bézier Easing Tool for EffectCraft
 
-## ✨ Features
+**NOW FOR ALL.**
 
-- 🎯 Interactive Bézier curve editor
-- 🎬 Easing controls for motion design
-- ⚡ Quick workflow for animation adjustments
-- 🎨 Designed for editors and motion designers
-- 🛠️ Built as a custom script/plugin for EffectCraft
+Create smoother motion. Shape your curves. Make every animation feel right.
 
-## 📦 Installation
+[Features](#-features) · [Installation](#-installation) · [Feedback](#-feedback-and-support)
 
-1. Download the latest FlowCraft release.
-2. Follow the included installation instructions for your EffectCraft version.
-3. Launch FlowCraft and start creating smoother animations.
-
-*Detailed installation instructions will be added with the public release.*
-
-## 🚀 Project Status
-
-FlowCraft is under active development. Features, compatibility, and presets may evolve as testing continues.
-
-## 💙 Made for Editors
-
-Created by **just Ansh** for the EffectCraft community.
-
-Built to make smooth animation accessible to everyone.
+</div>
 
 ---
 
-**FlowCraft — Now For All.**
+## ✨ Features
+
+- 🎯 **Bézier Curve Editing** — Fine-tune easing curves for your animations.
+- 🎬 **Motion Design Workflow** — Shape movement for text, transitions, and other animated elements.
+- ⚡ **Quick Adjustments** — Create and apply easing without manually tweaking every curve.
+- 🎨 **Editor-Focused Design** — Built for motion designers and video editors.
+- 🧩 **EffectCraft Script** — Created to work within EffectCraft's scripting environment.
+
+## 🖼️ Preview
+
+See FlowCraft in action:
+
+<!-- Add a screenshot or demo GIF here when available. -->
+
+## 📦 Installation
+
+1. Download the latest public release from the [Releases](../../releases) page.
+2. Follow the installation instructions included with that release.
+3. Open EffectCraft and launch FlowCraft using the supported script installation workflow.
+
+> Installation instructions may change as FlowCraft and EffectCraft evolve. Follow the instructions provided with the version you download.
+
+## 🚧 Project Status
+
+FlowCraft is actively being developed and improved.
+
+Feedback, bug reports, and suggestions from the EffectCraft community are welcome.
+
+## 💬 Feedback and Support
+
+Have a bug report, suggestion, or idea for a future feature?
+
+**Discord:** `just_anshh`
+
+You can reach out to me on Discord or share feedback in the EffectCraft community.
+
+## 👨‍💻 Creator
+
+Created by **just Ansh** for editors who want better animation tools.
+
+---
+
+<div align="center">
+
+**FlowCraft — Now For All.** 💙
+
+*Made for editors. Built for smoother motion.*
+
+</div>
