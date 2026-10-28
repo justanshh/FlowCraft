@@ -30,33 +30,7 @@ See FlowCraft in action:
 
 ---
 
-📦 Installation Guide
-
-Follow these steps to install FlowCraft in EffectCraft.
-
-Step 1 — Download FlowCraft
-
-Download FlowCraft.jsx from the Assets section of this release.
-
-Save it somewhere easy to find, such as your Downloads folder.
-
-Step 2 — Open EffectCraft
-
-Launch EffectCraft.
-
-Open the project where you want to use FlowCraft.
-
-Step 3 — Install the ScriptUI Panel
-
-Navigate to the Scripts section in EffectCraft.
-
-Select Install ScriptUI Panel.
-
-Locate the downloaded FlowCraft.jsx file.
-
-Select the file and confirm the installation if prompted.
-
-Step 4 — Launch FlowCraft
+**Installation:** EffectCraft → Scripts → Install ScriptUI Panel → Windows, select `FlowCraft.jsx` → Open FlowCraft.
 
 Find FlowCraft in the available ScriptUI panels or scripts.
 
