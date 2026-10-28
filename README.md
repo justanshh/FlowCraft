@@ -28,8 +28,7 @@ See FlowCraft in action:
 
 <img width="455" height="322" alt="Screenshot 2026-10-28 005312" src="https://github.com/user-attachments/assets/4e137a19-181a-49dd-ada7-29602ccbbdba" />
 
-
-
+---
 
 📦 Installation Guide
 
