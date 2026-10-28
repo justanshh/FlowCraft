@@ -1,7 +1,6 @@
 <img width="2172" height="724" alt="FlowCraft Easing Curve Logo" src="https://github.com/user-attachments/assets/bd7f6374-de70-40a1-94b6-99495edddf2c" />
 <div align="center">
 
-<img src="assets/flowcraft-logo.png" alt="FlowCraft — Bézier Easing Tool" width="800">
 
 ### A Bézier Easing Tool for EffectCraft
 
