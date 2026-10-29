@@ -1,7 +1,4 @@
-// FlowCraft v27 — Color-calibrated Flow-style easing editor for EffectCraft ScriptUI.
-// Layout target: the real FlowCraft dock in EffectCraft 0.17.0 (447 x 296 px).
-// EffectCraft 0.17.0 does not pass live dock dimensions to a ScriptUI panel, so this
-// version deliberately lays out at the measured dock size instead of pretending to resize.
+// FlowCraft— Color-calibrated Flow-style easing editor for EffectCraft ScriptUI.
 (function (thisObj) {
     // =========================================================================
     // 25 FLOW PRESETS (Full + Compact Names for Narrow Workspace Docks)
