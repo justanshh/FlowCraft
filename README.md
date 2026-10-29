@@ -1,6 +1,8 @@
-<img width="2172" height="724" alt="FlowCraft Easing Curve Logo" src="https://github.com/user-attachments/assets/bd7f6374-de70-40a1-94b6-99495edddf2c" />
-<div align="center">
+ <div align="center">
 
+<img width="900" alt="FlowCraft — Bézier Easing Tool" src="https://github.com/user-attachments/assets/bd7f6374-de70-40a1-94b6-99495edddf2c" />
+
+# FlowCraft
 
 ### A Bézier Easing Tool for EffectCraft
 
@@ -8,7 +10,7 @@
 
 Create smoother motion. Shape your curves. Make every animation feel right.
 
-[Features](#-features) · [Installation](#-installation) · [Feedback](#-feedback-and-support)
+[**⬇️ Download FlowCraft v1.0.0**](https://github.com/justanshh/FlowCraft/releases/latest)
 
 </div>
 
@@ -16,63 +18,58 @@ Create smoother motion. Shape your curves. Make every animation feel right.
 
 ## ✨ Features
 
-- 🎯 **Bézier Curve Editing** — Fine-tune easing curves for your animations.
-- 🎬 **Motion Design Workflow** — Shape movement for text, transitions, and other animated elements.
-- ⚡ **Quick Adjustments** — Create and apply easing without manually tweaking every curve.
+- 🎯 **Bézier Curve Editor** — Fine-tune easing curves for your animations.
+- 🎬 **Motion Design Workflow** — Shape movement for text, transitions, and animated elements.
+- ⚡ **Quick Adjustments** — Create and apply easing with a focused workflow.
 - 🎨 **Editor-Focused Design** — Built for motion designers and video editors.
-- 🧩 **EffectCraft Script** — Created to work within EffectCraft's scripting environment.
+- 🧩 **EffectCraft Script** — Designed to run inside EffectCraft.
 
 ## 🖼️ Preview
 
 See FlowCraft in action:
 
-<img width="455" height="322" alt="Screenshot 2026-10-28 005312" src="https://github.com/user-attachments/assets/4e137a19-181a-49dd-ada7-29602ccbbdba" />
+<img width="455" alt="FlowCraft interface preview" src="https://github.com/user-attachments/assets/4e137a19-181a-49dd-ada7-29602ccbbdba" />
 
 ---
 
-**Installation:** EffectCraft → Scripts → Install ScriptUI Panel → Windows, select `FlowCraft.jsx` → Open FlowCraft.
+## 📦 Installation
 
-Find FlowCraft in the available ScriptUI panels or scripts.
+1. Download [`FlowCraft.jsx`](https://github.com/justanshh/FlowCraft/releases/latest) from **Assets**.
+2. Open EffectCraft.
+3. Go to **File → Scripts → Install UI Panel**.
+4. Select `FlowCraft.jsx` from your computer and confirm.
+5. Open **Window → FlowCraft**.
 
-Open it and start adjusting your Bézier easing curves.
+That's it! Start working with your Bézier easing curves.
 
-⚠️ Troubleshooting
+## 🛠️ Troubleshooting
 
-If FlowCraft doesn't appear, check that the installation completed successfully.
-
-Restart EffectCraft if required.
-
-Make sure you're using an EffectCraft version that supports the script features FlowCraft needs.
-
-> Installation instructions may change as FlowCraft and EffectCraft evolve. Follow the instructions provided with the version you download.
-
----
+- **FlowCraft doesn't appear?** Check that the script installation completed successfully, then restart EffectCraft if needed.
+- **Getting a syntax error?** Share your operating system, EffectCraft version, and a screenshot of the error so I can investigate.
+- **Still stuck?** Reach out through the EffectCraft community.
 
 ## 🚧 Project Status
 
-FlowCraft is actively being developed and improved.
+FlowCraft v1.0.0 is the first public release.
 
-Feedback, bug reports, and suggestions from the EffectCraft community are welcome.
+I'm continuing to improve the plugin. Bug reports, suggestions, and feature requests are welcome!
 
-## 💬 Feedback and Support
+## 💬 Feedback & Support
 
-Have a bug report, suggestion, or idea for a future feature?
+Found a bug or have an idea for a future update?
 
-**Discord:** `just_anshh`
-
-You can reach out to me on Discord or share feedback in the EffectCraft community.
+- **Discord:** `just_anshh`
+- **GitHub Issues:** [Report a bug or suggest a feature](https://github.com/justanshh/FlowCraft/issues)
+- **Downloads:** [All FlowCraft releases](https://github.com/justanshh/FlowCraft/releases)
 
 ## 👨‍💻 Creator
 
-Created by **𝖏𝖚𝖘𝖙 𝕬𝖓𝖘𝖍
-** for editors who want better animation tools.
-
----
+Created by **𝖏𝖚𝖘𝖙 𝕬𝖓𝖘𝖍** for editors who want better animation tools.
 
 <div align="center">
 
 **FlowCraft — Now For All.** 💙
 
-*Made by editor. Made for editors.*
+*Made by an editor. Made for editors.*
 
 </div>
