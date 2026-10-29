@@ -34,11 +34,12 @@ See FlowCraft in action:
 
 ## 📦 Installation
 
-1. Download [`FlowCraft.jsx`](https://github.com/justanshh/FlowCraft/releases/latest) from **Assets**.
-2. Open EffectCraft.
-3. Go to **File → Scripts → Install UI Panel**.
-4. Select `FlowCraft.jsx` from your computer and confirm.
-5. Open **Window → FlowCraft**.
+1. Download `FlowCraft.jsx` from the [latest release](https://github.com/justanshh/FlowCraft/releases/latest).
+2. Open EffectCraft and navigate to **File → Scripts → Install UI Panel**.
+3. From the file selection window, locate and select the downloaded `FlowCraft.jsx` file.
+4. Once installed, go to **Window → FlowCraft** to open the plugin panel.
+
+You're all set! Enjoy FlowCraft. 🚀
 
 That's it! Start working with your Bézier easing curves.
 
