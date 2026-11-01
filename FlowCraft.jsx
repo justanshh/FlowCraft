@@ -44,7 +44,86 @@
             { id: "rebound",  name: "rebound",  shortName: "rebound", c: [0.15, 1.28, 0.30, 1.00] },
             { id: "beatDrop", name: "beatDrop", shortName: "beatDrp", c: [0.00, 0.95, 0.05, 1.00] }
         ],
+        "tiktok": [
+            { id: "slam", name: "slam", shortName: "slam", c: [0.16, 1.00, 0.12, 0.70] },
+            { id: "crack", name: "crack", shortName: "crack", c: [0.00, 0.76, 0.08, 0.74] },
+            { id: "smack", name: "smack", shortName: "smack", c: [0.00, 0.68, 0.20, 0.70] },
+            { id: "bang", name: "bang", shortName: "bang", c: [0.12, 0.90, 0.54, 0.70] },
+            { id: "hitStop", name: "hitStop", shortName: "hitStop", c: [0.04, 0.56, 0.70, 0.90] },
+            { id: "kick", name: "kick", shortName: "kick", c: [0.12, 1.14, 0.04, 1.06] },
+            { id: "blast", name: "blast", shortName: "blast", c: [0.70, 0.00, 0.04, 1.00] },
+            { id: "rocket", name: "rocket", shortName: "rocket", c: [0.96, -0.12, 0.14, 1.00] }
+        ],
+        "youtube": [
+            { id: "thump", name: "thump", shortName: "thump", c: [0.52, 0.92, 0.28, 0.98] },
+            { id: "stomp", name: "stomp", shortName: "stomp", c: [0.40, 0.94, 0.04, 0.98] },
+            { id: "settle", name: "settle", shortName: "settle", c: [0.48, 0.82, 0.20, 1.16] },
+            { id: "overshoot", name: "overshoot", shortName: "ovrsht", c: [0.28, 0.98, 0.47, 1.28] },
+            { id: "swing", name: "swing", shortName: "swing", c: [0.57, 0.08, 0.47, 1.33] },
+            { id: "followThru", name: "followThru", shortName: "flwThr", c: [0.40, 0.00, 0.30, 1.20] },
+            { id: "surge", name: "surge", shortName: "surge", c: [0.84, 0.12, 0.28, 0.92] }
+        ],
+        "motion": [
+            { id: "silk", name: "silk", shortName: "silk", c: [0.24, 0.02, 0.84, 0.90] },
+            { id: "satin", name: "satin", shortName: "satin", c: [0.51, 0.02, 0.73, 0.98] },
+            { id: "velvet", name: "velvet", shortName: "velvet", c: [0.76, 0.02, 0.60, 0.98] },
+            { id: "cruise", name: "cruise", shortName: "cruise", c: [0.70, 0.02, 0.14, 0.98] },
+            { id: "drift", name: "drift", shortName: "drift", c: [0.70, 0.00, 0.50, 1.00] },
+            { id: "bloom", name: "bloom", shortName: "bloom", c: [0.18, 0.00, 0.58, 1.12] },
+            { id: "cinema", name: "cinema", shortName: "cinema", c: [0.40, 0.10, 0.10, 1.00] },
+            { id: "taper", name: "taper", shortName: "taper", c: [0.62, 0.20, 0.22, 1.00] }
+        ],
+        "cinematic": [
+            { id: "slowMo", name: "slowMo", shortName: "slowMo", c: [0.08, 0.39, 0.49, 0.74] },
+            { id: "freeze", name: "freeze", shortName: "freeze", c: [0.24, 0.22, 0.00, 0.78] },
+            { id: "linger", name: "linger", shortName: "linger", c: [0.04, 0.73, 0.84, 0.70] },
+            { id: "float", name: "float", shortName: "float", c: [0.41, 0.02, 0.08, 0.82] },
+            { id: "sail", name: "sail", shortName: "sail", c: [0.00, 0.06, 0.49, 0.70] },
+            { id: "fade", name: "fade", shortName: "fade", c: [0.04, 0.32, 0.82, 0.70] },
+            { id: "coast", name: "coast", shortName: "coast", c: [0.40, 0.30, 0.55, 0.85] }
+        ],
+        "text": [
+            { id: "pop", name: "pop", shortName: "pop", c: [0.20, 1.38, 0.48, 1.14] },
+            { id: "jolt", name: "jolt", shortName: "jolt", c: [0.00, 1.20, 0.12, 1.06] },
+            { id: "recoil", name: "recoil", shortName: "recoil", c: [0.38, 1.62, 0.48, 1.14] },
+            { id: "whiplash", name: "whiplash", shortName: "whpLsh", c: [0.36, 1.63, 0.24, 0.83] },
+            { id: "hover", name: "hover", shortName: "hover", c: [0.28, 0.00, 0.04, 0.94] },
+            { id: "anticipate", name: "anticipate", shortName: "antcpt", c: [0.20, -0.28, 0.44, 0.98] },
+            { id: "elastic", name: "elastic", shortName: "elastc", c: [0.45, 1.00, 0.30, 1.45] }
+        ],
+        "transitions": [
+            { id: "snapIn", name: "snapIn", shortName: "snapIn", c: [0.93, 0.10, 0.98, 0.32] },
+            { id: "sling", name: "sling", shortName: "sling", c: [0.70, -0.65, 0.20, 1.10] },
+            { id: "catapult", name: "catapult", shortName: "catapl", c: [0.85, -0.45, 0.05, 1.25] },
+            { id: "lunge", name: "lunge", shortName: "lunge", c: [0.55, -0.40, 0.10, 1.00] },
+            { id: "windup", name: "windup", shortName: "windup", c: [0.45, -0.60, 0.35, 1.00] },
+            { id: "launch", name: "launch", shortName: "launch", c: [0.52, -0.16, 0.08, 0.98] },
+            { id: "pullBack", name: "pullBack", shortName: "pulBck", c: [0.35, -0.50, 0.65, 1.00] }
+        ],
+        "bounce": [
+            { id: "rubber", name: "rubber", shortName: "rubber", c: [0.12, 1.58, 0.62, 1.02] },
+            { id: "spring", name: "spring", shortName: "spring", c: [0.50, 1.50, 0.70, 0.90] },
+            { id: "shudder", name: "shudder", shortName: "shudder", c: [0.42, 1.28, 0.62, 0.60] },
+            { id: "crescendo", name: "crescendo", shortName: "cresc", c: [0.62, 0.06, 0.96, 0.53] },
+            { id: "midHold", name: "midHold", shortName: "midHld", c: [0.10, 0.80, 0.90, 0.20] },
+            { id: "stutter", name: "stutter", shortName: "stuttr", c: [0.20, 0.60, 0.80, 0.40] }
+        ],
         "custom": []
+    };
+
+    // Section order for the header click, and the title shown for each one.
+    var LIB_ORDER = ["default", "velocity", "tiktok", "youtube", "motion", "cinematic", "text", "transitions", "bounce", "custom"];
+    var LIB_TITLES = {
+        "default": "default",
+        "velocity": "velocity edits",
+        "tiktok": "tiktok / reels",
+        "youtube": "youtube edits",
+        "motion": "motion graphics",
+        "cinematic": "cinematic",
+        "text": "text & titles",
+        "transitions": "transitions",
+        "bounce": "bounce & ramps",
+        "custom": "user saved ★"
     };
 
     // Persist user-created curves in EffectCraft/After Effects script settings.
@@ -120,6 +199,39 @@
         draggingMode: null       // "h1" | "h2" | "scrub" | null
     };
 
+    // Remember direction, preview speed and library between sessions.
+    var UI_SETTINGS_KEY = "uiSettings";
+
+    function saveUiSettings() {
+        try {
+            if (!app.settings) return;
+            app.settings.saveSetting(SETTINGS_SECTION, UI_SETTINGS_KEY, JSON.stringify({
+                version: 1, direction: state.direction,
+                previewDuration: state.previewDuration, activeLib: state.activeLib
+            }));
+        } catch (e) {}
+    }
+
+    function loadUiSettings() {
+        try {
+            if (!app.settings || !app.settings.haveSetting(SETTINGS_SECTION, UI_SETTINGS_KEY)) return;
+            var s = JSON.parse(app.settings.getSetting(SETTINGS_SECTION, UI_SETTINGS_KEY));
+            if (!s) return;
+            if (s.direction === "out" || s.direction === "both" || s.direction === "in") state.direction = s.direction;
+            if (s.previewDuration === 500 || s.previewDuration === 1000 || s.previewDuration === 1500) {
+                state.previewDuration = s.previewDuration;
+                state.animStart = Date.now() - state.previewT * state.previewDuration;
+            }
+            if (LIBRARIES.hasOwnProperty(s.activeLib) && s.activeLib !== "default" &&
+                (s.activeLib !== "custom" || LIBRARIES.custom.length > 0)) {
+                state.activeLib = s.activeLib;
+                state.activeId = null;
+            }
+        } catch (e) {}
+    }
+
+    loadUiSettings();
+
     // =========================================================================
     // CUBIC BEZIER MATH SOLVER
     // =========================================================================
@@ -171,16 +283,29 @@
     var labelCache = {};
     var labelCacheW = -1;
 
-    // EffectCraft's ScriptUIGraphics consumes linear-light RGB. The palette
-    // below is authored as ordinary display/sRGB values, so convert each RGB
-    // channel before creating pens and brushes. Without this, #2e2e2e becomes
-    // roughly #767676 and the entire panel looks washed out.
+    // EffectCraft 0.17 used linear-light ScriptUI colours, while v19 supplies
+    // ordinary display/sRGB values. Keep the authored palette stable across
+    // both hosts instead of making v19 render the old colours almost black.
+    function hostUsesDisplaySrgb() {
+        try {
+            var match = String(app.version || "").match(/(\d+)\.(\d+)/);
+            if (!match) return true;
+            var major = parseInt(match[1], 10);
+            var minor = parseInt(match[2], 10);
+            return major > 0 || minor >= 19;
+        } catch (e) { return true; }
+    }
+    var HOST_USES_DISPLAY_SRGB = hostUsesDisplaySrgb();
+
     function srgbToLinear(v) {
         v = Math.max(0, Math.min(1, v));
         return v <= 0.04045 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
     }
 
     function toLinearColor(color) {
+        if (HOST_USES_DISPLAY_SRGB) {
+            return [color[0], color[1], color[2], color.length > 3 ? color[3] : 1];
+        }
         return [srgbToLinear(color[0]), srgbToLinear(color[1]), srgbToLinear(color[2]),
             color.length > 3 ? color[3] : 1];
     }
@@ -267,17 +392,34 @@
     // =========================================================================
     var L = {};
 
+    // Pick the smallest column count (from baseCols up) that keeps every row at
+    // least 34 px tall; if the dock is too short for that, use as many columns
+    // as fit with cells at least minCellW wide.
+    function chooseCols(count, kw, kh, baseCols, minCellW) {
+        var n = Math.max(1, count);
+        var maxCols = Math.max(baseCols, Math.floor(kw / minCellW));
+        var best = baseCols;
+        for (var c = baseCols; c <= maxCols; c++) {
+            best = c;
+            if (kh / Math.ceil(n / c) >= 34) break;
+        }
+        return best;
+    }
+
     function updateLayout(rawW, rawH) {
         var W = Math.max(200, rawW || 446);
         var H = Math.max(210, rawH || 295);
         var activeList = LIBRARIES[state.activeLib] || [];
         var visibleCount = Math.min(activeList.length, 35);
 
-        if (W < 420) {
+        // EC v19 can create docks that are just wide enough to enter the old
+        // split layout but too narrow for both a usable graph and preset grid.
+        // Stack a little sooner; the classic 447 px dock remains side-by-side.
+        if (W < 440) {
             var topH = Math.max(150, Math.floor(H * 0.43));
             topH = Math.min(topH, Math.max(112, H - 100));
             var graphH = Math.max(68, topH - 58);
-            var colsNarrow = W < 250 ? 3 : (W < 330 ? 4 : 5);
+            var colsNarrow = chooseCols(visibleCount, W - 12, Math.max(80, H - (topH + 32)), W < 250 ? 3 : (W < 330 ? 4 : 5), 44);
             var rowsNarrow = Math.max(1, Math.ceil(visibleCount / colsNarrow));
             L = {
                 W: W, H: H, vertical: true,
@@ -300,7 +442,7 @@
             var leftW = Math.floor((contentW - gap) * 0.51);
             var rightX = outer + leftW + gap;
             var rightW = Math.max(100, W - rightX - outer);
-            var colsWide = rightW >= 330 ? 7 : (rightW >= 245 ? 5 : 4);
+            var colsWide = chooseCols(visibleCount, rightW, Math.max(80, H - 36), rightW >= 330 ? 7 : (rightW >= 245 ? 5 : 4), 44);
             var rowsWide = Math.max(1, Math.ceil(visibleCount / colsWide));
 
             var ah = 24;
@@ -322,6 +464,12 @@
                 cols: colsWide, rows: rowsWide
             };
         }
+        // The default section fills its area exactly as before. Smaller sections
+        // use the space they are given, but never taller than a square cell, so
+        // rows sit tight under the header instead of stretching across the dock.
+        L.cellH = (state.activeLib === "default")
+            ? L.kh / L.rows
+            : Math.min(L.kh / L.rows, L.kw / L.cols + 6);
         return L;
     }
 
@@ -369,7 +517,7 @@
 
     // EffectCraft's alert()/prompt() and File.openDialog()/saveDialog() are non-interactive
     // shims, so use real ScriptUI dialogs for editable text and notices.
-    function askTextDialog(titleText, labelText, defaultText) {
+    function askTextDialog(titleText, labelText, defaultText, hintText) {
         var dlg = new Window("dialog", titleText);
         dlg.orientation = "column";
         dlg.alignChildren = ["fill", "top"];
@@ -378,6 +526,8 @@
         dlg.add("statictext", undefined, labelText);
         var input = dlg.add("edittext", undefined, defaultText || "");
         input.characters = 48;
+        try { input.active = true; } catch (e) {}
+        if (hintText) dlg.add("statictext", undefined, hintText);
         var buttons = dlg.add("group");
         buttons.alignment = ["right", "center"];
         var ok = buttons.add("button", undefined, "OK", { name: "ok" });
@@ -390,20 +540,100 @@
         return code === 1 ? result : null;
     }
 
-    function showNotice(titleText, messageText) {
+    function showNotice(titleText, messageText, height) {
         var dlg = new Window("dialog", titleText);
         dlg.orientation = "column";
         dlg.alignChildren = ["fill", "top"];
         dlg.margins = 12;
         dlg.spacing = 10;
         var label = dlg.add("statictext", undefined, messageText, { multiline: true });
-        label.preferredSize = [340, 58];
+        label.preferredSize = [340, height || 58];
         var row = dlg.add("group");
         row.alignment = ["right", "center"];
         var ok = row.add("button", undefined, "OK", { name: "ok" });
         ok.onClick = function () { dlg.close(1); };
         dlg.layout.layout(true);
         dlg.show();
+    }
+
+    // Accepts four numbers, cubic-bezier(...), a preset name, or a CSS keyword.
+    var CSS_CURVES = {
+        "ease-in": [0.42, 0, 1, 1],
+        "ease-out": [0, 0, 0.58, 1],
+        "ease-in-out": [0.42, 0, 0.58, 1]
+    };
+
+    function findPresetByName(text) {
+        var key = text.toLowerCase(), libs = LIB_ORDER;
+        for (var i = 0; i < libs.length; i++) {
+            var list = LIBRARIES[libs[i]] || [];
+            for (var j = 0; j < list.length; j++) {
+                if (list[j].name.toLowerCase() === key || String(list[j].id).toLowerCase() === key) {
+                    return { lib: libs[i], item: list[j] };
+                }
+            }
+        }
+        return null;
+    }
+
+    function parseCurveText(raw) {
+        var text = String(raw).replace(/^\s+|\s+$/g, "");
+        var hit = findPresetByName(text);
+        if (hit) return { c: hit.item.c.slice(0), preset: hit, notes: [] };
+        var css = CSS_CURVES[text.toLowerCase().replace(/[\s_]+/g, "-")];
+        if (css) return { c: css.slice(0), preset: null, notes: [] };
+
+        var parts = text.match(/[+-]?(?:\d+\.?\d*|\.\d+)(?:[eE][+-]?\d+)?/g);
+        if (!parts || parts.length !== 4) {
+            return { error: "Enter four values, a preset name, or a CSS keyword.\n\nExamples:  0.42, 0, 0.58, 1   |   backOut   |   ease-in-out" };
+        }
+        var labels = ["x1", "y1", "x2", "y2"], lo = [0, -0.65, 0, -0.65], hi = [1, 1.65, 1, 1.65];
+        var out = [], notes = [];
+        for (var i = 0; i < 4; i++) {
+            var v = parseFloat(parts[i]);
+            if (!isFinite(v)) return { error: "Enter four finite numeric values." };
+            var clamped = Math.max(lo[i], Math.min(hi[i], v));
+            if (clamped !== v) notes.push(labels[i] + ": " + v + " -> " + clamped + "  (allowed " + lo[i] + " to " + hi[i] + ")");
+            out.push(clamped);
+        }
+        return { c: out, preset: null, notes: notes };
+    }
+
+    function showShortcutHelp() {
+        showNotice("FlowCraft Shortcuts",
+            "GRAPH\n" +
+            "  Drag a handle to shape the curve (Shift-drag snaps to 0 / 1)\n" +
+            "  Double-click a handle to reset it\n" +
+            "  Alt-click the graph to mirror the curve (in <-> out)\n\n" +
+            "PREVIEW BAR\n" +
+            "  Play / pause at the left, click the time at the right for 0.5s / 1s / 1.5s,\n" +
+            "  drag along the track to scrub\n\n" +
+            "CURVE READOUT\n" +
+            "  Click to edit or copy the curve (numbers, cubic-bezier(), a preset name,\n" +
+            "  ease-in / ease-out / ease-in-out)\n" +
+            "  Left icon: read the curve from two selected keyframes\n\n" +
+            "PRESET SECTIONS\n" +
+            "  Click the section title for the next section, Shift-click for the previous one", 290);
+    }
+
+    function confirmDialog(titleText, messageText, okText, cancelText) {
+        var dlg = new Window("dialog", titleText);
+        dlg.orientation = "column";
+        dlg.alignChildren = ["fill", "top"];
+        dlg.margins = 12;
+        dlg.spacing = 10;
+        var label = dlg.add("statictext", undefined, messageText, { multiline: true });
+        label.preferredSize = [340, 78];
+        var row = dlg.add("group");
+        row.alignment = ["right", "center"];
+        var ok = row.add("button", undefined, okText || "OK", { name: "ok" });
+        var cancel = row.add("button", undefined, cancelText || "Cancel", { name: "cancel" });
+        var accepted = false;
+        ok.onClick = function () { accepted = true; dlg.close(1); };
+        cancel.onClick = function () { dlg.close(0); };
+        dlg.layout.layout(true);
+        dlg.show();
+        return accepted;
     }
 
     function exportCurrentLibrary() {
@@ -473,7 +703,7 @@
     // 20 updates/sec. A self-rescheduling *one-shot* task is not clamped, so this
     // asks for a frame every 33 ms (~30 fps). The whole panel is repainted per
     // frame; 16 ms looks better but saturates the UI thread on this machine.
-    var PREVIEW_FRAME_MS = 33;
+    var PREVIEW_FRAME_MS = 16;   // was 33; raise back if the host feels sluggish
     var PREVIEW_IDLE_MS = 100;
 
     function startPreviewTicker(win) {
@@ -544,7 +774,13 @@
         try { win.text = "FlowCraft"; } catch (nameError) {}
 
         win.orientation = "stack";
-        win.margins = 0;
+        // Docked panels keep 2 px of slack on the right and bottom. EffectCraft
+        // docks have fractional sizes; a canvas that fills them exactly can
+        // overflow by a fraction of a pixel and trigger both scrollbars.
+        win.margins = (win instanceof Window) ? 0 : [0, 0, 2, 2];
+        if (!(win instanceof Window)) {
+            try { win.graphics.backgroundColor = makeBrush(win.graphics, [0.18, 0.18, 0.18, 1]); } catch (bgError) {}
+        }
         win.spacing = 0;
         win.alignChildren = ["fill", "fill"];
 
@@ -561,7 +797,10 @@
         // overscan below covers the margin; the layout itself uses 446 x 295.
         // EffectCraft never reports a later dock resize to the script, so a hard
         // target is honest here.
-        surface.preferredSize = [446, 295];
+        // A docked panel reports a small preferred size: EffectCraft adds
+        // scrollbars whenever the content's preferred size is larger than the
+        // dock, and the canvas still fills the dock (fill on both axes).
+        surface.preferredSize = (win instanceof Window) ? [446, 295] : [180, 180];
         if (win instanceof Window) win.preferredSize = [446, 295];
 
         // =====================================================================
@@ -687,6 +926,13 @@
             g.newPath();
             g.ellipsePath(playCurveX - 2.5, playCurveY - 2.5, 5, 5);
             g.strokePath(P.blueDot);
+
+            // Help "?" button
+            var helpBtn = helpButtonRect();
+            g.newPath();
+            g.ellipsePath(helpBtn.x, helpBtn.y, helpBtn.w, helpBtn.h);
+            g.strokePath(P.iconMuted);
+            try { g.drawString("?", P.txtMuted, helpBtn.x + helpBtn.w * 0.5 - 2.5, helpBtn.y - 0.5, getFont(9)); } catch (helpError) {}
 
             // -----------------------------------------------------------------
             // 2. WORKING KEYFRAME EASING PREVIEW BAR (Click/Drag to Scrub or Play)
@@ -876,9 +1122,7 @@
             g.lineTo(L.hx + dropW, L.hy + L.hh - 2);
             g.strokePath(P.iconMuted);
 
-            var libTitle = (state.activeLib === "default")
-                ? "default"
-                : (state.activeLib === "velocity" ? "velocity edits" : "user saved ★");
+            var libTitle = LIB_TITLES[state.activeLib] || state.activeLib;
             try {
                 if (typeof g.drawString === "function") {
                     g.drawString(libTitle, P.txtWhite, L.hx + 2, hMidY - 7);
@@ -920,7 +1164,7 @@
             // -----------------------------------------------------------------
             var list = LIBRARIES[state.activeLib] || [];
             var cellW = L.kw / L.cols;
-            var cellH = L.kh / L.rows;
+            var cellH = L.cellH;
             var maxGridItems = L.cols * L.rows;
             var labelFont = getFont(10);
             var labelFontSmall = getFont(9);
@@ -944,14 +1188,22 @@
                     g.fillPath(P.blueBrush);
                 }
 
-                var sx0 = bx + 2.5,         sy0 = by + bSize - 2.5;
-                var sx3 = bx + bSize - 2.5, sy3 = by + 2.5;
-                var sw  = sx3 - sx0,        sh  = sy0 - sy3;
+                // Presets that overshoot (or pull back) are scaled down so the whole
+                // curve and its handles stay inside the box; normal curves are unchanged.
+                var h1y = Math.max(-0.25, Math.min(1.25, p.c[1]));
+                var h2y = Math.max(-0.25, Math.min(1.25, p.c[3]));
+                var yLow = Math.min(0, h1y, h2y);
+                var yHigh = Math.max(1, h1y, h2y);
+                var innerTop = by + 2.5, innerBottom = by + bSize - 2.5;
+                var sx0 = bx + 2.5, sx3 = bx + bSize - 2.5;
+                var sw = sx3 - sx0;
+                var sh = (innerBottom - innerTop) / (yHigh - yLow);
+                var sy0 = innerBottom + yLow * sh, sy3 = sy0 - sh;
 
                 var kx1 = sx0 + p.c[0] * sw;
-                var ky1 = sy0 - Math.max(-0.25, Math.min(1.25, p.c[1])) * sh;
+                var ky1 = sy0 - h1y * sh;
                 var kx2 = sx0 + p.c[2] * sw;
-                var ky2 = sy0 - Math.max(-0.25, Math.min(1.25, p.c[3])) * sh;
+                var ky2 = sy0 - h2y * sh;
 
                 presetGeom.push({
                     p: p, isSel: isSel, cellX: cellX, by: by, bSize: bSize,
@@ -1069,8 +1321,44 @@
         // =====================================================================
         // UNIFIED MOUSE HANDLERS + SMOOTH PREVIEW ANIMATION ON HOVER/DRAG
         // =====================================================================
-        function onPointerDown(lx, ly, shiftKey) {
+        // Double-click a handle to reset it; Alt-click the graph to mirror the curve.
+        var lastHandleDown = { mode: null, time: 0 };
+
+        // Small "?" button in the top-right corner of the graph.
+        function helpButtonRect() {
+            return { x: L.gx + L.gw - 31, y: L.gy + 3, w: 11, h: 11 };
+        }
+
+        function resetHandle(which) {
+            if (which === "h1") { state.x1 = 0.3333; state.y1 = 0.3333; }
+            else { state.x2 = 0.6667; state.y2 = 0.6667; }
+            state.activeId = null;
+            state.animStart = Date.now() - 400;
+            surface.notify("onDraw");
+        }
+
+        function mirrorCurve() {
+            var nx1 = 1 - state.x2, ny1 = 1 - state.y2, nx2 = 1 - state.x1, ny2 = 1 - state.y1;
+            state.x1 = nx1; state.y1 = ny1; state.x2 = nx2; state.y2 = ny2;
+            state.activeId = null;
+            state.animStart = Date.now() - 400;
+            surface.notify("onDraw");
+        }
+
+        function onPointerDown(lx, ly, shiftKey, altKey) {
             updateLayout(surface.size.width, surface.size.height);
+
+            // 0. Help "?" button (a handle sitting under it still wins)
+            var hbtn = helpButtonRect();
+            if (lx >= hbtn.x - 3 && lx <= hbtn.x + hbtn.w + 3 && ly >= hbtn.y - 3 && ly <= hbtn.y + hbtn.h + 3) {
+                var gtH = getGraphTransform();
+                var dxA = lx - gtH.mapX(state.x1), dyA = ly - gtH.mapY(state.y1);
+                var dxB = lx - gtH.mapX(state.x2), dyB = ly - gtH.mapY(state.y2);
+                if (dxA * dxA + dyA * dyA > 196 && dxB * dxB + dyB * dyB > 196) {
+                    showShortcutHelp();
+                    return;
+                }
+            }
 
             // 1. Check Graph Box
             if (lx >= L.gx - 4 && lx <= L.gx + L.gw + 4 && ly >= L.gy - 4 && ly <= L.gy + L.gh + 4) {
@@ -1079,7 +1367,17 @@
                 var x2 = gt.mapX(state.x2), y2 = gt.mapY(state.y2);
                 var d1 = (lx - x1)*(lx - x1) + (ly - y1)*(ly - y1);
                 var d2 = (lx - x2)*(lx - x2) + (ly - y2)*(ly - y2);
-                state.draggingMode = (d1 <= d2) ? "h1" : "h2";
+                var which = (d1 <= d2) ? "h1" : "h2";
+                if (altKey) { mirrorCurve(); return; }
+                var downTime = Date.now();
+                if (lastHandleDown.mode === which && downTime - lastHandleDown.time < 350) {
+                    lastHandleDown.mode = null;
+                    resetHandle(which);
+                    return;
+                }
+                lastHandleDown.mode = which;
+                lastHandleDown.time = downTime;
+                state.draggingMode = which;
                 onPointerMove(lx, ly, shiftKey);
                 return;
             }
@@ -1098,6 +1396,7 @@
                     if (state.previewDuration === 1000) state.previewDuration = 500;
                     else if (state.previewDuration === 500) state.previewDuration = 1500;
                     else state.previewDuration = 1000;
+                    saveUiSettings();
                     state.animStart = Date.now() - state.previewT * state.previewDuration;
                     surface.notify("onDraw");
                     return;
@@ -1114,26 +1413,31 @@
                     return;
                 }
                 if (lx >= L.rx + L.rw - 18) {
-                    saveCurrentToCustom();
+                    saveCurrentToCustom(shiftKey);
                     return;
                 }
-                var curStr = state.x1.toFixed(4) + ", " + state.y1.toFixed(4) + ", " + state.x2.toFixed(4) + ", " + state.y2.toFixed(4);
-                var entered = askTextDialog("Edit Bezier Curve", "Enter x1, y1, x2, y2 or paste cubic-bezier(x1, y1, x2, y2):", curStr);
+                if (shiftKey) { showShortcutHelp(); return; }
+                function trimNum(n) { return String(Number(n.toFixed(4))); }
+                var curStr = "cubic-bezier(" + trimNum(state.x1) + ", " + trimNum(state.y1) + ", " +
+                    trimNum(state.x2) + ", " + trimNum(state.y2) + ")";
+                var entered = askTextDialog("Edit Bezier Curve",
+                    "Copy the curve below, or paste x1, y1, x2, y2 / cubic-bezier(...) / a preset name:",
+                    curStr, "Tip: click the ? at the top right of the graph for all shortcuts.");
                 if (entered !== null && String(entered).replace(/^\s+|\s+$/g, "") !== "") {
-                    var parts = String(entered).match(/[+-]?(?:\d+\.?\d*|\.\d+)(?:[eE][+-]?\d+)?/g);
-                    if (parts && parts.length === 4) {
-                        var nx1 = parseFloat(parts[0]), ny1 = parseFloat(parts[1]);
-                        var nx2 = parseFloat(parts[2]), ny2 = parseFloat(parts[3]);
-                        if (isFinite(nx1) && isFinite(ny1) && isFinite(nx2) && isFinite(ny2)) {
-                            state.x1 = Math.max(0.0, Math.min(1.0, nx1));
-                            state.y1 = Math.max(-0.65, Math.min(1.65, ny1));
-                            state.x2 = Math.max(0.0, Math.min(1.0, nx2));
-                            state.y2 = Math.max(-0.65, Math.min(1.65, ny2));
-                            state.activeId = null;
-                            state.animStart = Date.now() - 400;
-                            surface.notify("onDraw");
-                        } else showNotice("Invalid Bezier Curve", "Enter four finite numeric values.");
-                    } else showNotice("Invalid Bezier Curve", "Enter exactly four values, for example: 0.42, 0, 0.58, 1");
+                    var parsed = parseCurveText(entered);
+                    if (parsed.error) {
+                        showNotice("Invalid Bezier Curve", parsed.error);
+                    } else {
+                        state.x1 = parsed.c[0]; state.y1 = parsed.c[1];
+                        state.x2 = parsed.c[2]; state.y2 = parsed.c[3];
+                        state.activeId = null;
+                        if (parsed.preset) { state.activeLib = parsed.preset.lib; state.activeId = parsed.preset.item.id; }
+                        state.animStart = Date.now() - 400;
+                        surface.notify("onDraw");
+                        if (parsed.notes.length) {
+                            showNotice("Curve adjusted", "Some values were outside the allowed range and were clamped:\n\n" + parsed.notes.join("\n"), 90);
+                        }
+                    }
                 }
                 return;
             }
@@ -1144,12 +1448,15 @@
                 var relX = lx - L.ax;
                 if (relX < dirZoneW * 0.33) {
                     state.direction = "out";
+                    saveUiSettings();
                     surface.notify("onDraw");
                 } else if (relX < dirZoneW * 0.67) {
                     state.direction = "both";
+                    saveUiSettings();
                     surface.notify("onDraw");
                 } else if (relX <= dirZoneW) {
                     state.direction = "in";
+                    saveUiSettings();
                     surface.notify("onDraw");
                 } else {
                     state.applyFlashUntil = Date.now() + 200;
@@ -1163,11 +1470,14 @@
             if (lx >= L.hx && lx <= L.hx + L.hw && ly >= L.hy && ly <= L.hy + L.hh) {
                 var dropW = L.hw - 48;
                 if (lx <= L.hx + dropW) {
-                    if (state.activeLib === "default") state.activeLib = "velocity";
-                    else if (state.activeLib === "velocity") state.activeLib = "custom";
-                    else state.activeLib = "default";
+                    var libIdx = 0;
+                    for (var li = 0; li < LIB_ORDER.length; li++) {
+                        if (LIB_ORDER[li] === state.activeLib) { libIdx = li; break; }
+                    }
+                    state.activeLib = LIB_ORDER[(libIdx + (shiftKey ? LIB_ORDER.length - 1 : 1)) % LIB_ORDER.length];
+                    saveUiSettings();
                 } else if (lx <= L.hx + dropW + 17) {
-                    saveCurrentToCustom();
+                    saveCurrentToCustom(shiftKey);
                     return;
                 } else if (lx <= L.hx + dropW + 32) {
                     // Click [] to import a FlowCraft JSON library; Shift-click to export the current one.
@@ -1185,7 +1495,7 @@
             // 6. Check Responsive Preset Grid
             if (lx >= L.kx && lx <= L.kx + L.kw && ly >= L.ky && ly <= L.ky + L.kh) {
                 var col = Math.floor((lx - L.kx) / (L.kw / L.cols));
-                var row = Math.floor((ly - L.ky) / (L.kh / L.rows));
+                var row = Math.floor((ly - L.ky) / L.cellH);
                 if (col >= 0 && col < L.cols && row >= 0 && row < L.rows) {
                     var idx = row * L.cols + col;
                     var list = LIBRARIES[state.activeLib] || [];
@@ -1200,6 +1510,7 @@
                         state.previewPlaying = true;
                         state.animStart = Date.now() - 380;
                         surface.notify("onDraw");
+                        if (altKey && state.activeLib === "custom") renameCustomPreset(item);
                     }
                 }
             }
@@ -1260,7 +1571,7 @@
         try {
             surface.addEventListener("mousedown", function (e) {
                 var pt = getDirectCanvasXY(e);
-                if (pt) onPointerDown(pt.x, pt.y, !!e.shiftKey);
+                if (pt) onPointerDown(pt.x, pt.y, !!e.shiftKey, !!e.altKey);
             });
             surface.addEventListener("mousemove", function (e) {
                 var pt = getDirectCanvasXY(e);
@@ -1284,7 +1595,49 @@
             return false;
         }
 
-        function saveCurrentToCustom() {
+        function warnIfNotStored(saved) {
+            if (!saved && !warnedNoPersist) {
+                warnedNoPersist = true;
+                showNotice("Preset not stored", "The preset is saved for this session, but EffectCraft would not store it, so it will be gone after a restart.\n\nShift-click the [] icon to export a backup.");
+            }
+        }
+
+        function overwriteActiveCustom() {
+            var target = null;
+            if (state.activeLib === "custom" && state.activeId) {
+                for (var i = 0; i < LIBRARIES.custom.length; i++) {
+                    if (LIBRARIES.custom[i].id === state.activeId) { target = LIBRARIES.custom[i]; break; }
+                }
+            }
+            if (!target) {
+                showNotice("Overwrite Preset", "Select a custom preset first, then Shift-click the star to overwrite it with the current curve.");
+                return;
+            }
+            target.c = [
+                Number(state.x1.toFixed(4)), Number(state.y1.toFixed(4)),
+                Number(state.x2.toFixed(4)), Number(state.y2.toFixed(4))
+            ];
+            warnIfNotStored(persistCustomPresets());
+            surface.notify("onDraw");
+        }
+
+        function renameCustomPreset(item) {
+            var entered = askTextDialog("Rename Preset", "New name for this preset:", item.name);
+            if (entered === null) return;
+            var name = String(entered).replace(/^\s+|\s+$/g, "").substr(0, 32);
+            if (!name) { showNotice("Rename Preset", "The name cannot be empty."); return; }
+            if (name.toLowerCase() !== item.name.toLowerCase() && customNameTaken(name)) {
+                showNotice("Rename Preset", "A custom preset named \"" + name + "\" already exists. Pick a different name.");
+                return;
+            }
+            item.name = name;
+            item.shortName = name.substr(0, 9);
+            warnIfNotStored(persistCustomPresets());
+            surface.notify("onDraw");
+        }
+
+        function saveCurrentToCustom(overwrite) {
+            if (overwrite) { overwriteActiveCustom(); return; }
             // loadCustomPresets() drops duplicate names, so never reuse one
             // (e.g. after deleting custom1 of custom1/custom2).
             var num = LIBRARIES.custom.length + 1;
@@ -1305,10 +1658,7 @@
             state.activeLib = "custom";
             state.activeId = preset.id;
             surface.notify("onDraw");
-            if (!saved && !warnedNoPersist) {
-                warnedNoPersist = true;
-                showNotice("Preset not stored", "The preset is saved for this session, but EffectCraft would not store it, so it will be gone after a restart.\n\nShift-click the [] icon to export a backup.");
-            }
+            warnIfNotStored(saved);
         }
 
         function deleteSelectedCustom() {
@@ -1458,11 +1808,49 @@
             showNotice("Read Curve", "Select two adjacent keyframes on the same animated property, then click the read icon again.");
         }
 
+        // Names of selected properties whose value range would clip this curve's overshoot.
+        function findClippedProperties(keyed) {
+            var lo = 0, hi = 1, names = [];
+            for (var s = 0; s <= 100; s++) {
+                var y = evalBezierY(s / 100, state.x1, state.y1, state.x2, state.y2);
+                if (y < lo) lo = y;
+                if (y > hi) hi = y;
+            }
+            if (lo >= -0.001 && hi <= 1.001) return names;
+            for (var i = 0; i < keyed.length; i++) {
+                var prop = keyed[i].prop, clipped = false, seen = {};
+                try {
+                    if (typeof PropertyValueType === "undefined" || prop.propertyValueType !== PropertyValueType.OneD) continue;
+                    if (!prop.hasMin && !prop.hasMax) continue;
+                    for (var j = 0; j < keyed[i].keys.length && !clipped; j++) {
+                        for (var seg = keyed[i].keys[j] - 1; seg <= keyed[i].keys[j] && !clipped; seg++) {
+                            if (seg < 1 || seg >= prop.numKeys || seen[seg]) continue;
+                            seen[seg] = true;
+                            var v0 = prop.keyValue(seg), span = prop.keyValue(seg + 1) - v0;
+                            var vLow = Math.min(v0 + lo * span, v0 + hi * span);
+                            var vHigh = Math.max(v0 + lo * span, v0 + hi * span);
+                            if ((prop.hasMin && vLow < prop.minValue - 1e-6) ||
+                                (prop.hasMax && vHigh > prop.maxValue + 1e-6)) clipped = true;
+                        }
+                    }
+                } catch (e) { continue; }
+                if (clipped) names.push(prop.name);
+            }
+            return names;
+        }
+
         function applyCurveToKeyframes() {
             var keyed = collectSelectedKeyedProperties();
             if (!keyed.length) {
                 showNotice("Apply Curve", "Select one or more keyframes on an animated property, then click APPLY.");
                 return;
+            }
+            var clippedNames = findClippedProperties(keyed);
+            if (clippedNames.length) {
+                var shown = clippedNames.slice(0, 3).join(", ") + (clippedNames.length > 3 ? ", ..." : "");
+                if (!confirmDialog("Apply Curve",
+                    "This curve overshoots, but " + shown + " has a limited value range, so the motion will be clipped at its limit.\n\nApply anyway?",
+                    "Apply", "Cancel")) return;
             }
             var slopes = curveSlopes();
             var outInfluence = Math.max(0.1, Math.min(100, state.x1 * 100));
