@@ -22,7 +22,7 @@ Create smoother motion. Shape your curves. Make every animation feel right.
 ## 🖼️ Preview
 
 <p align="center">
-  <img src="assets/flowcraft-panel.png" alt="FlowCraft panel inside EffectCraft" width="380">
+  <img width="470" height="311" alt="Preview " src="https://github.com/user-attachments/assets/69b930d1-ffb4-4825-8187-9cb96413a477" />
 </p>
 
 The graph, preview bar, curve readout, direction toggles, and APPLY button sit together. The preset grid sits on the right on wide docks, or underneath on narrow ones. Click the **?** at the top right of the graph any time to see every shortcut.
@@ -81,17 +81,6 @@ None of the 50 new presets repeats a preset that already existed, and none repea
 
 <p align="center">
   <img width="1600" height="1000" alt="sections-overview" src="https://github.com/user-attachments/assets/20220ae2-434b-4748-96ea-aa2f4a93ff4c" />
-
-</p>
-
-<p align="center">
-  <img src="assets/velocity-section.png" alt="The velocity edits section in FlowCraft" width="320"><br>
-  <sub>The <b>velocity edits</b> section inside EffectCraft.</sub>
-</p>
-
-<p align="center">
-  <img src="assets/new-presets-reference.png" alt="Reference sheet of the 50 new presets, by section" width="640"><br>
-  <sub>Reference sheet drawn from the preset values, one row per new section.</sub>
 </p>
 
 ---
@@ -143,7 +132,7 @@ Click the curve readout and enter any of these:
 | `ease-in`, `ease-out`, `ease-in-out` | CSS keywords |
 
 <p align="center">
-  <img src="assets/curve-dialog.png" alt="Edit Bezier Curve dialog" width="520">
+  <img width="584" height="162" alt="curve-dialog" src="https://github.com/user-attachments/assets/0f2d9be9-19a7-497e-920c-7d67ba822d4f" />
 </p>
 
 x values stay between 0 and 1. y values stay between -0.65 and 1.65. If you enter something outside that, FlowCraft clamps it and tells you which values changed.
