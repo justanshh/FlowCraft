@@ -246,7 +246,7 @@
     // Play the preview once when the panel opens, then let it rest. A docked
     // panel that animates forever repaints itself ~30 times a second for a
     // picture nobody is looking at; one pass shows the curve and stops.
-    state.previewStopAt = Date.now() + state.previewDuration + 240;
+    state.previewStopAt = Date.now() + (1 - state.previewT) * state.previewDuration + 240;
 
     // =========================================================================
     // CUBIC BEZIER MATH SOLVER
@@ -886,9 +886,16 @@
 
             // Live Preview Bar Time Advancement right inside onDraw!
             if (state.previewPlaying && state.draggingMode !== "scrub") {
-                var cycle = state.previewDuration + 240;
-                var elapsed = (Date.now() - state.animStart) % cycle;
-                state.previewT = Math.min(1.0, Math.max(0.0, elapsed / state.previewDuration));
+                var elapsed = Date.now() - state.animStart;
+                if (state.previewStopAt) {
+                    // One-shot: run to the end and hold there. Do not wrap
+                    // back to the start, or the "pause" lands mid-curve.
+                    state.previewT = Math.min(1.0, Math.max(0.0, elapsed / state.previewDuration));
+                } else {
+                    var cycle = state.previewDuration + 240;
+                    elapsed = elapsed % cycle;
+                    state.previewT = Math.min(1.0, Math.max(0.0, elapsed / state.previewDuration));
+                }
             }
 
             var x0 = gt.mapX(0.0), y0 = gt.mapY(0.0);
@@ -1438,11 +1445,16 @@
                 if (lx <= L.px + 18) {
                     state.previewPlaying = !state.previewPlaying;
                     if (state.previewPlaying) {
-                        state.previewStopAt = 0;   // explicit play loops until paused
+                        // Resume from the current playhead and run one pass to
+                        // the end. Explicit play used to loop forever, which
+                        // kept the whole panel repainting at ~30 fps.
+                        if (state.previewT >= 1) state.previewT = 0;
                         state.animStart = Date.now() - state.previewT * state.previewDuration;
+                        state.previewStopAt = Date.now() + (1 - state.previewT) * state.previewDuration + 240;
                         if (previewTicker) previewTicker.start();
-                    } else if (previewTicker) {
-                        previewTicker.stop();
+                    } else {
+                        state.previewStopAt = 0;
+                        if (previewTicker) previewTicker.stop();
                     }
                     surface.notify("onDraw");
                     return;
@@ -1561,10 +1573,12 @@
                         state.x2 = item.c[2];
                         state.y2 = item.c[3];
                         state.activeId = item.id;
-                        // Jump preview to active mid-curve point & play one pass
+                        // Jump preview to a mid-curve point & play one pass
+                        var startT = Math.min(0.9, 380 / state.previewDuration);
                         state.previewPlaying = true;
-                        state.previewStopAt = Date.now() + state.previewDuration + 240;
-                        state.animStart = Date.now() - 380;
+                        state.previewT = startT;
+                        state.animStart = Date.now() - startT * state.previewDuration;
+                        state.previewStopAt = Date.now() + (1 - startT) * state.previewDuration + 240;
                         if (previewTicker) previewTicker.start();
                         surface.notify("onDraw");
                         if (altKey && state.activeLib === "custom") renameCustomPreset(item);
