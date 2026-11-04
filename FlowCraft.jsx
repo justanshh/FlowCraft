@@ -299,6 +299,11 @@
     var labelCache = {};
     var labelCacheW = -1;
 
+    // Preset thumbnail geometry only changes when the library, selection,
+    // layout or cell size changes. Rebuilding 25 curves every preview frame
+    // allocated a fresh array and repeated the same math for no reason.
+    var presetGeomCache = { key: "", geom: null };
+
     // EffectCraft 0.17 used linear-light ScriptUI colours, while v19 supplies
     // ordinary display/sRGB values. Keep the authored palette stable across
     // both hosts instead of making v19 render the old colours almost black.
@@ -722,9 +727,11 @@
     // docked panel that nobody is touching leaves no scheduled task behind.
     //
     // EffectCraft clamps a *repeating* task to a 50 ms minimum (20 fps), so a
-    // self-rescheduling one-shot is used instead. 33 ms is ~30 fps; 16 ms
-    // saturated the UI thread on the development machine.
-    var PREVIEW_FRAME_MS = 33;
+    // self-rescheduling one-shot is used instead. 20 ms is ~50 fps. The preset
+    // grid no longer draws handle dots/tangents for every thumbnail, so this
+    // stays smooth even on the 25-preset default section. Raise it to 25 or 33
+    // if a slower host starts dropping frames.
+    var PREVIEW_FRAME_MS = 20;
 
     // Set by startPreviewTicker so the play/pause and preset handlers can
     // resume the loop after it has been cancelled.
@@ -1227,65 +1234,67 @@
             var labelFont = getFont(10);
             var labelFontSmall = getFont(9);
 
-            var presetGeom = [];
-            for (var j = 0; j < list.length && j < maxGridItems; j++) {
-                var p = list[j];
-                var row = Math.floor(j / L.cols);
-                var col = j % L.cols;
+            var geomKey = state.activeLib + "|" + state.activeId + "|" + L.cols + "|" + L.rows +
+                "|" + cellW + "|" + cellH + "|" + L.kx + "|" + L.ky + "|" + list.length;
+            var presetGeom;
+            if (state.activeLib !== "custom" && presetGeomCache.key === geomKey && presetGeomCache.geom) {
+                presetGeom = presetGeomCache.geom;
+            } else {
+                presetGeom = [];
+                for (var j = 0; j < list.length && j < maxGridItems; j++) {
+                    var p = list[j];
+                    var row = Math.floor(j / L.cols);
+                    var col = j % L.cols;
 
-                var cellX = L.kx + col * cellW;
-                var cellY = L.ky + row * cellH;
-                var bSize = Math.max(18, Math.min(cellW - 8, cellH - 14));
-                var bx = cellX + (cellW - bSize) * 0.5;
-                var by = cellY + 1;
+                    var cellX = L.kx + col * cellW;
+                    var cellY = L.ky + row * cellH;
+                    var bSize = Math.max(18, Math.min(cellW - 8, cellH - 14));
+                    var bx = cellX + (cellW - bSize) * 0.5;
+                    var by = cellY + 1;
 
-                var isSel = (state.activeId === p.id);
-                if (isSel) {
-                    g.newPath();
-                    g.rectPath(bx - 2, by - 1, bSize + 4, bSize + 2);
-                    g.fillPath(P.blueBrush);
+                    // Presets that overshoot (or pull back) are scaled down so the whole
+                    // curve and its handles stay inside the box; normal curves are unchanged.
+                    var h1y = Math.max(-0.25, Math.min(1.25, p.c[1]));
+                    var h2y = Math.max(-0.25, Math.min(1.25, p.c[3]));
+                    var yLow = Math.min(0, h1y, h2y);
+                    var yHigh = Math.max(1, h1y, h2y);
+                    var innerTop = by + 2.5, innerBottom = by + bSize - 2.5;
+                    var sx0 = bx + 2.5, sx3 = bx + bSize - 2.5;
+                    var sw = sx3 - sx0;
+                    var sh = (innerBottom - innerTop) / (yHigh - yLow);
+                    var sy0 = innerBottom + yLow * sh, sy3 = sy0 - sh;
+
+                    var kx1 = sx0 + p.c[0] * sw;
+                    var ky1 = sy0 - h1y * sh;
+                    var kx2 = sx0 + p.c[2] * sw;
+                    var ky2 = sy0 - h2y * sh;
+
+                    presetGeom.push({
+                        p: p, isSel: (state.activeId === p.id),
+                        cellX: cellX, bx: bx, by: by, bSize: bSize,
+                        sx0: sx0, sy0: sy0, sx3: sx3, sy3: sy3,
+                        kx1: kx1, ky1: ky1, kx2: kx2, ky2: ky2
+                    });
                 }
-
-                // Presets that overshoot (or pull back) are scaled down so the whole
-                // curve and its handles stay inside the box; normal curves are unchanged.
-                var h1y = Math.max(-0.25, Math.min(1.25, p.c[1]));
-                var h2y = Math.max(-0.25, Math.min(1.25, p.c[3]));
-                var yLow = Math.min(0, h1y, h2y);
-                var yHigh = Math.max(1, h1y, h2y);
-                var innerTop = by + 2.5, innerBottom = by + bSize - 2.5;
-                var sx0 = bx + 2.5, sx3 = bx + bSize - 2.5;
-                var sw = sx3 - sx0;
-                var sh = (innerBottom - innerTop) / (yHigh - yLow);
-                var sy0 = innerBottom + yLow * sh, sy3 = sy0 - sh;
-
-                var kx1 = sx0 + p.c[0] * sw;
-                var ky1 = sy0 - h1y * sh;
-                var kx2 = sx0 + p.c[2] * sw;
-                var ky2 = sy0 - h2y * sh;
-
-                presetGeom.push({
-                    p: p, isSel: isSel, cellX: cellX, by: by, bSize: bSize,
-                    sx0: sx0, sy0: sy0, sx3: sx3, sy3: sy3,
-                    kx1: kx1, ky1: ky1, kx2: kx2, ky2: ky2
-                });
+                if (state.activeLib !== "custom") {
+                    presetGeomCache.key = geomKey;
+                    presetGeomCache.geom = presetGeom;
+                }
             }
 
-            // Batch the 25 mini-curves into a few paths. Each preset used to
-            // submit six separate path ops; on a full-panel redraw that per-op
-            // overhead was most of the animation cost. The selected preset's
-            // tangents still use their lighter color; curves/endpoints are all
-            // the same white pen.
-            g.newPath();
-            for (var gi = 0; gi < presetGeom.length; gi++) {
-                var pg = presetGeom[gi];
-                if (pg.isSel) continue;
-                g.moveTo(pg.sx0, pg.sy0);
-                g.lineTo(pg.kx1, pg.ky1);
-                g.moveTo(pg.sx3, pg.sy3);
-                g.lineTo(pg.kx2, pg.ky2);
+            // The blue selection box is a draw operation, not geometry, so it
+            // still runs every frame even when the cached geometry is reused.
+            for (var gh = 0; gh < presetGeom.length; gh++) {
+                var pgh = presetGeom[gh];
+                if (!pgh.isSel) continue;
+                g.newPath();
+                g.rectPath(pgh.bx - 2, pgh.by - 1, pgh.bSize + 4, pgh.bSize + 2);
+                g.fillPath(P.blueBrush);
             }
-            g.strokePath(P.miniTan);
 
+            // Batch the mini-curves into a few paths. Only the selected preset
+            // gets tangent lines and handle dots: drawing those details for all
+            // 25 default thumbnails was the biggest per-frame cost.
             g.newPath();
             for (var gj = 0; gj < presetGeom.length; gj++) {
                 var pg2 = presetGeom[gj];
@@ -1296,15 +1305,6 @@
                 g.lineTo(pg2.kx2, pg2.ky2);
             }
             g.strokePath(P.miniTanSel);
-
-            g.newPath();
-            for (var gk = 0; gk < presetGeom.length; gk++) {
-                var pg3 = presetGeom[gk];
-                if (pg3.isSel) continue;
-                g.ellipsePath(pg3.kx1 - 1, pg3.ky1 - 1, 2, 2);
-                g.ellipsePath(pg3.kx2 - 1, pg3.ky2 - 1, 2, 2);
-            }
-            g.strokePath(P.miniTan);
 
             g.newPath();
             for (var gl = 0; gl < presetGeom.length; gl++) {
@@ -1319,8 +1319,8 @@
             for (var gm = 0; gm < presetGeom.length; gm++) {
                 var pg5 = presetGeom[gm];
                 g.moveTo(pg5.sx0, pg5.sy0);
-                for (var ms = 1; ms <= 12; ms++) {
-                    var mt = ms / 12.0;
+                for (var ms = 1; ms <= 7; ms++) {
+                    var mt = ms / 7.0;
                     var inv = 1.0 - mt;
                     var mx = inv*inv*inv*pg5.sx0 + 3*inv*inv*mt*pg5.kx1 + 3*inv*mt*mt*pg5.kx2 + mt*mt*mt*pg5.sx3;
                     var my = inv*inv*inv*pg5.sy0 + 3*inv*inv*mt*pg5.ky1 + 3*inv*mt*mt*pg5.ky2 + mt*mt*mt*pg5.sy3;
