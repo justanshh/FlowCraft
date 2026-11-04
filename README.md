@@ -10,12 +10,12 @@
 
 Create smoother motion. Shape your curves. Make every animation feel right.
 
-![Version](https://img.shields.io/badge/version-v1.1.0-4F9DFF?style=flat-square)
+![Version](https://img.shields.io/badge/version-v1.1.1-4F9DFF?style=flat-square)
 ![Host](https://img.shields.io/badge/EffectCraft-v0.19%20ready-2b2b2b?style=flat-square)
 ![Presets](https://img.shields.io/badge/presets-82-F2C744?style=flat-square)
 ![ScriptUI](https://img.shields.io/badge/ExtendScript-ScriptUI-555?style=flat-square)
 
-[**⬇️ Download FlowCraft v1.1.0**](https://github.com/justanshh/FlowCraft/releases/latest)
+[**⬇️ Download FlowCraft v1.1.1**](https://github.com/justanshh/FlowCraft/releases/latest)
 
 ---
 
