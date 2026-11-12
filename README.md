@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/bd7f6374-de70-40a1-94b6-99495edddf2c" alt="FlowCraft — Bézier Easing Tool" width="100%">
+  <img width="2170" height="725" alt="FlowCraft Blue Swoosh Logo" src="https://github.com/user-attachments/assets/72e62f0f-8351-4e3c-b96d-6922d3d3ae76" />
 </p>
 
 # FlowCraft
